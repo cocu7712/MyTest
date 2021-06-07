@@ -1,0 +1,51 @@
+body{
+ background-color: #2c3e50;
+}
+
+body{
+    color: #34495e;
+}
+
+.clicked{
+    color: #34495e;
+    
+}
+
+.btn{
+    cursor: pointer;
+}
+
+.js-title{
+    color: burlywood;
+}
+
+.form,
+.greetings{
+    display: none;
+}
+
+.showing{
+    display: block;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+.bgImage{
+    position: absolute;     /* 위치를 구애받지 않고 선택*/
+    top: 0;                 /*start 위치*/
+    left: 0;                /*start 위치*/
+    width: 100%;            /*크기*/
+    height: 100%;
+    z-index: -1;            /*index순서*/
+    animation: fadeIn 1.5s linear; /*이미지가 나타나는 시간*/
+}
+
+.js-weather{
+    color: white;
+}
