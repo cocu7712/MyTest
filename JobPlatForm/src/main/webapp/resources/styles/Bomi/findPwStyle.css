@@ -1,0 +1,112 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 15% 1fr 15%;
+  grid-template-rows: 10% 1fr 10%;
+  grid-template-areas:
+    "header header header"
+    "left section right"
+    "footer footer footer";
+  height: 100vh;
+  grid-gap: 10px;
+}
+
+body {
+  font-size: 14px;
+  min-height: 600px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.left {
+  grid-area: left;
+}
+
+.right {
+  grid-area: right;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+div.section {
+  display: flex;
+  align-items: center;
+  grid-area: section;
+}
+
+div.FindContainer {
+  width: 100%;
+  min-width: 530px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: normal;
+  margin: 10px 10px 10px 10px;
+}
+
+p {
+  color: rgb(77, 77, 77);
+  font-size: 13px;
+  margin: 40px 10px 10px 10px;
+}
+
+hr {
+  background-color: rgb(168, 168, 168);
+  border: 0px;
+  height: 0.5px;
+}
+table {
+  display: inline;
+  border-collapse: collapse;
+}
+td,
+tr {
+  text-align: left;
+}
+input[type="text"] {
+  height: 22px;
+  width: 200px;
+}
+p.txt {
+  font-size: 12px;
+  margin: 10px;
+}
+
+div.find_pw {
+  text-align: center;
+}
+
+div.btn.ok {
+  text-align: center;
+}
+
+input[type="button"], input#searchBtn {
+  appearance: button;
+  margin-top: 20px;
+  width: 70px;
+  height: 30px;
+  cursor: pointer;
+}
+
+div.content {
+  position: relative;
+  height: 300px;
+}
+div.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-49%, -49%);
+}

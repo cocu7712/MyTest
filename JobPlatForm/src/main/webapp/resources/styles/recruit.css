@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+
+h1{
+	padding-top : 70px;
+	text-align : center;
+	margin-bottom : 50px;
+}
+
+.recruit{
+   	font-size: 0px;
+   	text-align: center;
+}
+
+.container{
+	display : inline-block;
+	padding-top : 0px;
+	margin-bottom : 50px;
+	border : 1px solid black;
+	border-radius : 20px;
+	overflow : hidden;
+}
+
+.container > img{
+	display : block;
+	margin : 0 auto;
+	width : 200px;
+	max-width : 100%;
+	height : 200px;
+	float : left;
+	border-radius : 20px;
+}	
+
+.comName{
+	padding-top : 30px;
+	float : left;
+	font-size : 30px;
+}
+
+.category{
+	font-weight:  bold;
+  	font-size: 18px;
+  	padding: 30px 0px;
+  	color: gray;	
+}
+
+.recruit_detail{
+	width : 80%;
+	margin : 0 auto;
+	border : 1px solid black;
+	text-align : center;
+}
+
+.img_box{
+	font-size : 0;
+	text-align : center;
+	margin-bottom : -100px;
+}
+
+.img_box > img{
+	width : 50%;
+	height : 50%;	
+}
+
+.comInfo{
+	margin-top : 100px;
+}

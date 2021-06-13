@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.db.mapper.FindMapper">
+	<select id="selectSearch" resultType="Integer" parameterType="String">
+		select count(*) from Member where name = #{mem_username} AND phone = #{mem_phone}
+	</select>
+		<select id="FindUserEmail" resultType="String" parameterType="String">
+		select mEmail from Member where name = #{mem_username} AND phone = #{mem_phone}
+	</select>
+</mapper>
+

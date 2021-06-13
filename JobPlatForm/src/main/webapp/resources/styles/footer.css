@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+footer{
+	padding-top: 200px;
+	clear:both
+}
+
+
+footer body {
+	line-height: 1;
+}
+footer ol, ul {
+	list-style: none;
+}
+footer blockquote, q {
+	quotes: none;
+}
+footer blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+footer a{
+	text-decoration:none;
+}
+footer table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*==================================================================*/
+footer html, body {
+    min-width: 320px;
+    letter-spacing: 0px;
+    font-family: 맑은고딕, "malgun gothic", 돋움, Dotum, "Apple SD Gothic Neo", Helvetica, sans-serif;
+    width: auto !important;
+}
+
+footer .bottom{
+	
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #f4f4f4;
+	height:55px;
+}
+footer .menu ul{
+	line-height:55px;
+	max-width: 1020px;
+    margin: 0 auto;
+    padding-left: 0;
+    overflow: hidden;
+}
+footer .menu li{
+	float:left;
+	margin:0px 7px;
+}
+footer .menu li a{
+	font-size:14px;
+	color:#666;
+}
+footer .menu li:after {
+    float: right;
+    display: block;
+    content: "|";
+    color: #d9d9d9;
+    margin-left:12px;
+}
+footer .menu li.sns-link{
+	float:right;
+}
+footer .menu li.sns-link a span{
+	display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: -1px 5px 0 0;
+    vertical-align: middle;
+    
+}
+footer .facebook span{
+	background:url(../images/facebook.jpg);
+}
+footer .instagram span{
+	background:url(../images/instagram.png);
+}
+footer .blog span{
+	background:url(../images/blog.png);
+}
+footer .company{
+	text-align:left;
+	width:60%;
+	float:left;
+}
+footer .company dl{
+	padding-top:25px;
+	margin:0 7px;
+}
+footer .company dt{
+	font-weight:bold;
+	color:#000;
+	margin: 0 0 10px 0;
+	font-size : 16px;
+}
+footer .company dd{
+	font-size: 13px;
+    line-height: 20px;
+    color: #888;
+    font-weight: 300;
+}
+footer .box_footer{
+	margin:20px 20px 20px 0;
+}
+footer .box_footer a{
+	display : inline-block;
+	height:24px;
+	margin:0 7px 0 0;
+	line-height: 22px;
+	padding: 0 6px;
+	color:#888;
+	box-sizing:border-box;
+	border:1px solid #ccc;
+	text-align:center;
+	font-size:12px;
+	vertical-align:top;
+		
+}
+footer .company p{
+	color:#888;
+	font-size:10px;
+	margin-left:7px;
+}
+footer .company-contact{
+	text-align:left;
+	float:right;
+	width:40%;
+	padding-bottom:30px;
+}
+footer .company-contact dl{
+	padding-top:25px;
+	
+}
+
+footer .company-contact dt{
+	font-weight:bold;
+	color:#000;
+	margin: 0 0 10px 0;
+	font-size : 16px;
+}
+footer .company-contact dd{
+	font-size: 13px;
+    line-height: 20px;
+    color: #888;
+    font-weight: 300;
+}
+

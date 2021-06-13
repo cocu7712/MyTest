@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.db.mapper.ResumeMapper">
+
+<!-- MyImg -->
+<insert id="insertMyImg" parameterType="com.db.resume.ResumeMyImgDto">
+	insert into myimg (res_img) values (#{res_img})
+</insert>
+
+<select id="selectMyImg" resultType="com.db.resume.ResumeMyImgDto" parameterType="String">
+	select * from myimg where mEmail  = #{mEmail}
+</select>
+
+<!-- School -->
+<insert id="insertSchool" parameterType="com.db.resume.ResumeSchoolDto">
+	insert into school (mEmail ,school,schoolDetail,admission,graduated) 
+	values (#{mEmail },#{school},#{schoolDetail},#{admission},#{graduated})
+</insert>
+
+<delete id="deleteSchool" parameterType="com.db.resume.ResumeSchoolDto">
+	delete from school where mEmail  = #{mEmail} and no = #{no}
+</delete>
+
+<select id="selectSchool" resultType="com.db.resume.ResumeSchoolDto" parameterType="String">
+	select * from school where mEmail  = #{mEmail} order by admission asc
+</select>
+
+<!-- Certiflcate -->
+<insert id="insertCertificate" parameterType="com.db.resume.ResumeCertiflcateDto">
+	insert into certificate (mEmail,certificate,issuer,getDate) 
+	values (#{mEmail},#{certificate},#{issuer},#{getDate})
+</insert>
+
+<delete id="deleteCertificate" parameterType="com.db.resume.ResumeCertiflcateDto">
+	delete from certificate where mEmail = #{mEmail} and no = #{no}
+</delete>
+
+<select id="selectCertificate" resultType="com.db.resume.ResumeCertiflcateDto" parameterType="String">
+	select * from certificate where mEmail  = #{mEmail} order by getDate asc
+</select>
+
+<!-- Career -->
+<insert id="insertCareer" parameterType="com.db.resume.ResumeCareerDto">
+	insert into Career (mEmail,position,company,startDate,endDate) 
+	values (#{mEmail},#{position},#{company},#{startDate},#{endDate})
+</insert>
+
+<delete id="deleteCareer" parameterType="com.db.resume.ResumeCareerDto">
+	delete from Career where mEmail  = #{mEmail} and no = #{no}
+</delete>
+
+<select id="selectCareer" resultType="com.db.resume.ResumeCareerDto" parameterType="String">
+	select * from Career where mEmail  = #{mEmail} order by startDate asc
+</select>
+
+</mapper>

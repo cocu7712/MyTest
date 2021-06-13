@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.db.mapper.RecruitMapper">
+	<select id = "selectTag" parameterType = "int" resultType = "com.db.recruit.RecruitDto">
+		select tag from recruit r, tag t where t.no = #{no} and t.no = r.no;
+	</select>
+	
+	<select id = "selectTagByString" parameterType = "int" resultType = "java.lang.String">
+		select tag from recruit r, tag t where t.no = #{no} and t.no = r.no;
+	</select>
+	
+	<select id = "selectAllRecruit" resultType = "com.db.recruit.RecruitDto">
+		select c.img, c.comName, c.tel, c.roadAddr, r.no, r.career, r.category,r.title, r.text1, r.text2, r.text3, r.text4, r.text5
+		from company c, recruit r
+		where c.comName = r.comName;
+	</select>
+	
+	<select id = "selectRecruitByCategory" parameterType = "java.lang.String" resultType = "com.db.recruit.RecruitDto">
+		select c.img, c.comName, c.tel, c.roadAddr, r.no, r.career, r.category,r.title, r.text1, r.text2, r.text3, r.text4, r.text5
+		from company c, recruit r
+		where c.comName = r.comName and r.category = #{category};
+	</select>
+	
+	<select id = "selectRecruitByNo" parameterType = "int" resultType = "com.db.recruit.RecruitDto">
+		select c.img, c.comName, c.tel, c.roadAddr, r.no, r.career, r.category,r.title, r.text1, r.text2, r.text3, r.text4, r.text5
+		from company c, recruit r
+		where c.comName = r.comName and r.no = #{no};
+	</select>
+	
+	<select id = "selectRecruitBy" parameterType = "map" resultType = "com.db.recruit.RecruitDto">
+		select c.img, c.comName, c.tel, c.roadAddr, r.no, r.career, r.category,r.title,r.text1, r.text2, r.text3, r.text4, r.text5
+		from company c, recruit r
+		where c.comName = r.comName and
+		<choose>
+ 	 		<when test="searchBy.equals('career')">
+ 	 			career like CONCAT('%',#{word},'%');
+ 	 		</when>
+ 	 		<when test="searchBy.equals('category')">
+ 	 			category like CONCAT('%',#{word},'%');
+ 	 		</when>
+ 	 		<when test = "searchBy.equals('comName')">
+ 	 			c.comName like  CONCAT('%',#{word},'%');
+ 	 		</when>
+ 	 	</choose>
+	</select>
+	
+</mapper>

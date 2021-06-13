@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.db.mapper.CompanyRegistMapper">
+ 
+<select id = "getSequence" resultType = "int">
+	select get_seq('NO_SEQ');
+</select>
+
+
+<insert id="registRecruit" parameterType="com.db.recruit.RecruitDto">
+	insert into recruit values(#{no}, #{comName}, #{category},#{career},#{title}, #{text1}, #{text2}, #{text3}, #{text4}, #{text5})
+</insert>
+
+<insert id = "insertTag" parameterType = "com.db.recruit.RecruitDto">
+	insert into tag values(#{no}, #{tag})
+</insert>
+</mapper>

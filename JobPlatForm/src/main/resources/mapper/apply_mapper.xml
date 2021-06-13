@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace = "com.db.mapper.ApplyMapper">
+	<select id = "selectIntroTitle" parameterType = "java.lang.String" resultType = "com.db.apply.ApplyDto">
+		select s.introNo, s.title from self_Intro s, member m where s.mEmail = #{mEmail};
+	</select>
+	
+	<insert id = "applyCompany" parameterType = "int">
+		insert into applyCom values(#{no}, #{introNo});
+	</insert>
+	
+	<select id = "applyCompanyByMember" parameterType = "java.lang.String" resultType = "com.db.apply.ApplyDto">
+		select r.no, c.comName, c.img, r.category, r.career, r.title from Recruit r, Company c, Member m, Self_Intro s, applyCom a where r.no = a.no and c.comName = r.comName and s.introNo = a.introNo and m.memail = #{mEmail};
+	</select>
+</mapper>

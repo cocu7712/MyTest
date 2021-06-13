@@ -1,0 +1,105 @@
+body{
+  width: 1200px;
+}
+
+h2{
+	margin: 50px 50px;
+}
+
+section{
+  width: 1200px;
+  border: 1px solid white;
+  background-color: white;
+  margin: 0px auto;
+}
+
+select{
+  width: 200px;
+  height: 30px;
+}
+
+.Regist_Info .RecruitmentField{
+  margin: 20px;
+}
+
+.Regist_Title{
+  width: 800px;
+  height: 25px;
+}
+
+.RegistNumber{
+  width: 50px;
+  height: 25px;
+  text-align: right;
+}
+
+.Recruit_Text1{
+  width: 925px;
+  height: 25px;
+}
+
+.Recruit_Text2{
+  width: 925px;
+  height: 25px;
+}
+
+.Recruit_Text3{
+  width: 925px;
+  height: 25px;
+}
+
+.Recruit_Text4{
+  width: 925px;
+  height: 500px;
+}
+
+.Recruit_Text5{
+  width: 925px;
+  height: 25px;
+}
+
+.buttons{
+  margin: 50px 0px 50px 0px;
+  text-align: center;
+}
+
+.buttons .Regist{
+  background-color: darkblue;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buttons .Regist:hover {
+	color: darkblue;
+  border: 1px solid darkblue;
+	box-shadow: white 0 0px 0px 40px inset;
+}
+
+
+.buttons .Cancel{
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buttons .Cancel:hover {
+	color: grey;
+  border: 1px solid grey;
+	box-shadow: white 0 0px 0px 40px inset;
+}

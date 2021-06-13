@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+.container {
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+  grid-template-rows: 10% 1fr 10%;
+  grid-template-areas:
+    "header header header"
+    "left section right"
+    "footer footer footer";
+  height: 100vh;
+  grid-gap: 10px;
+}
+
+body {
+  font-size: 14px;
+  min-height: 600px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.left {
+  grid-area: left;
+}
+
+.right {
+  grid-area: right;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+div.section {
+  grid-area: section;
+}
+
+div.content {
+  margin: 0 auto;
+  width: 350px;
+  height: 100%;
+  background-color: white;
+}
+
+p {
+  display: block;
+  margin: 0 auto;
+}
+
+.hr-sect {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.35);
+  font-size: 12px;
+  margin: 8px 0px;
+}
+
+.hr-sect::before,
+.hr-sect::after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.2);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 16px;
+}
+
+input[type="text"],
+input[type="password"] {
+  height: auto;
+  width: 95%;
+  line-height: normal;
+  padding: 0.8em 0.5em;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+div.margin {
+  padding: 20px 20px 20px 20px;
+}
+p {
+  display: block;
+  margin: 0 auto;
+}
+
+.br {
+  margin: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.loginmargin {
+  margin: 15px 0;
+}
+
+input.btn.memberlogin {
+  font-size: 15px;
+}
+
+#memberlogin .btn {
+  margin-top: 15px;
+  padding: 10px;
+  display: inline-block;
+  width: 100%;
+  border: 1px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-weight: 900;
+  text-align: center;
+  cursor: pointer;
+  background-color: #e5e5e5;
+}
+
+img.kakao_login_img {
+  width: 100%;
+}
+
+a:first-child {
+  margin-left: 0px;
+  padding-left: 0px;
+  border-left: none;
+}
+
+div.utilMenu {
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 12px;
+}
+a:visited {
+  color: black;
+}
+
+a.right {
+  float: right;
+  border-left: none;
+}
+
+a.select_id {
+  margin-right: 10px;
+}
+a.select_pw {
+  border-left: 1px solid rgb(180, 180, 180);
+  padding-left: 10px;
+}

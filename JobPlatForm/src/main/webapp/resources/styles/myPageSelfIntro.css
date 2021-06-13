@@ -1,0 +1,133 @@
+.myPage a:link, a:visited{/*link 하이퍼 링크가 걸린 상태 visited 클릭을 한 이후의 상태  */
+  text-align: center;
+  display: inline-block;  /*블럭형태의 영역*/
+  text-decoration: none;  /*밑줄 제거*/
+  color: black;
+  /* color: black;   글씨 색 */
+}
+
+.myPage .myPagebox{
+  margin: 30px auto;
+  width:  1600px;
+  font-size: 0px;
+}
+
+.myPage .myPagebox .myPageMenu{
+  border: 1px solid black;
+  width:  220px;
+  height: 900px;
+  margin-right: 19px;
+  margin-top:80px;
+  float: left;
+}
+
+.myPage .myPageMenu-resume{
+  /* border: 1px solid black; */
+  width: 1350px;
+  display: inline-block;
+}
+
+/* myPageMenu */
+
+.myPage .myPageMenu h2{
+  font-size: 25px;
+  padding: 20px 10px;
+}
+
+.myPage .myPageMenu h3{
+  font-size: 21px;
+  padding: 0px 10px;
+}
+
+.myPage .myPageMenu ul{
+  margin: 15px 0;
+  list-style-type: none;
+  padding: 0px;
+}
+.myPage .myPageMenu ul li{
+  box-sizing: border-box;
+  padding: 5px 30px;
+  font-size: 18px;
+  color: gray;
+  width: 220px;
+}
+.myPageMenu a:hover{
+  color: blue;
+}
+
+/* SelfIntro*/
+
+.myPage .selfIntro{
+  width: 1340px;
+  height: 100%;
+  border: 1px solid black;
+  float:left;
+  margin-top: 80px;
+}
+
+.selfIntro select{
+  width: 200px;
+  height: 30px;
+  font-size: 16px;
+  margin-left: 1055px;
+  margin-top: 50px;
+}
+
+.selfIntro h1{
+  margin: 20px 50px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.selfIntro h2{
+  margin: 20px 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.selfIntro .textarea{
+  margin-left: 50px;
+  margin-bottom: 40px;
+  width: 1200px;
+  font-size: 18px;
+}
+.selfIntro .title{
+  margin-left: 50px;
+  margin-bottom: 40px;
+  width: 1200px;
+  height:30px;
+  font-size: 20px;
+}
+
+.selfIntro button{
+  width: 100px;
+  height: 30px;
+  margin-bottom: 40px;
+  margin-left: 100px;
+  display: inline-block;
+}
+
+.selfIntro .inputButton{
+  width: 100px;
+  height: 30px;
+  margin-left: 50px;
+}
+
+.selfIntro .div-button{
+  margin: 30px auto;
+  width: 200px;
+}
+
+.selfIntro .submit{
+  width: 100px;
+  height: 30px;
+  margin-bottom: 40px;
+}
+
+.selfIntro .div-submit{
+  text-align: center;
+}
+
+
+

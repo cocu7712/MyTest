@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.db.mapper.LoginMapper">
+	<select id="selectKakao" resultType="com.db.dto.MemSignUpDTO" parameterType="String">
+		select mEmail as mem_useremail, PW as mem_password, Sex as mem_sex, Birth as mem_birth, Name as mem_name, Phone as mem_phone, roadAddr as mem_roadAddr, addrDetail as mem_addrDetail, Sysdate as mem_sysdate from Member where mEmail = #{email}   
+	</select>
+	<select id="selectmember" resultType="com.db.dto.MemSignUpDTO" parameterType="hashMap">
+		select mEmail as mem_useremail, PW as mem_password, Sex as mem_sex, Birth as mem_birth, Name as mem_name, Phone as mem_phone, roadAddr as mem_roadAddr, addrDetail as mem_addrDetail, Sysdate as mem_sysdate from Member where mEmail = #{email} AND PW = #{password}   
+	</select>
+	<select id="selectcompany" resultType="com.db.dto.ComSignUpDTO" parameterType="hashMap">
+		select cEmail as com_useremail, PW as com_password, comName as com_name , RoadAddr as com_roadAddr, AddrDetail as com_addrDetail, tel as com_tel, img as com_img ,Sysdate as mem_sysdate, appr as appr from Company where cEmail = #{email} AND PW = #{password}   
+	</select>
+	<select id="countemail" resultType="Integer" parameterType="String">
+		select count(*) from Member where mEmail = #{kakao}
+	</select>
+</mapper>

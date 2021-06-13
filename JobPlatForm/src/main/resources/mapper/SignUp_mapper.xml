@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.db.mapper.SignUpMapper">
+	<insert id="insertMem" parameterType="com.db.dto.MemSignUpDTO">
+		insert into Member values(#{mem_useremail},#{mem_password},#{mem_sex},#{mem_birth},#{mem_name},#{mem_phone},#{mem_roadAddr},#{mem_addrDetail},now())
+	</insert>
+	<insert id="insertCom" parameterType="com.db.dto.ComSignUpDTO">
+		insert into Company values(#{com_useremail},#{com_password},#{com_name},#{com_roadAddr},#{com_addrDetail},#{com_tel},#{com_img},"승인대기",now())
+	</insert>
+	<select id="selectUserEmail" resultType="Integer" parameterType="String">
+		select count(*) from Member where mEmail = #{member_email}
+	</select>
+	<select id="selectCompanyEmail" resultType="Integer" parameterType="String">
+		select count(*) from Company where cEmail = #{company_email}
+	</select>
+	<select id="selectUser" resultType="com.db.dto.MemSignUpDTO" parameterType="String">
+		select mEmail as mem_useremail, PW as mem_password, Sex as mem_sex, Birth as mem_birth, Name as mem_name, Phone as mem_phone, roadAddr as mem_roadAddr, addrDetail as mem_addrDetail, Sysdate as mem_sysdate from Member where mEmail = #{email}   
+	</select>
+</mapper>
+

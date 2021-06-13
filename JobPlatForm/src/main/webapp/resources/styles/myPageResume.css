@@ -1,0 +1,372 @@
+@charset "UTF-8";
+
+.myPage a:link, a:visited{/*link 하이퍼 링크가 걸린 상태 visited 클릭을 한 이후의 상태  */
+  text-align: center;
+  display: inline-block;  /*블럭형태의 영역*/
+  text-decoration: none;  /*밑줄 제거*/
+  color: black;
+  /* color: black;   글씨 색 */
+}
+
+.myPage .myPagebox{
+  margin: 30px auto;
+  width:  1600px;
+  font-size: 0px;
+}
+
+.myPage .myPagebox .myPageMenu{
+  border: 1px solid black;
+  width:  220px;
+  height: 900px;
+  margin-right: 20px;
+  margin-top:80px;
+  float: left;
+}
+
+.myPage .myPageMenu-resume{
+  /* border: 1px solid black; */
+  width: 1350px;
+  display: inline-block;
+}
+
+/* myPagebox */
+
+.myPage .myPageMenu h2{
+  font-size: 25px;
+  padding: 20px 10px;
+}
+
+.myPage .myPageMenu h3{
+  font-size: 21px;
+  padding: 20px 10px;
+}
+
+.myPage .myPageMenu ul{
+  margin: 15px 0;
+  list-style-type: none;
+}
+.myPage .myPageMenu ul li{
+  box-sizing: border-box;
+  padding: 5px 30px;
+  font-size: 18px;
+  color: gray;
+  width: 220px;
+}
+.myPageMenu a:hover{
+  color: blue;
+}
+
+/* main Top div */
+
+.myPage .myPageMenu-resume h1{
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 30px
+}
+
+.myPage .myPageMenu-resume .top{
+  width: 100%;
+
+}
+
+.myPage .myPageMenu-resume .top .img{
+  width: 200px;
+  height: 250px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  float: left;
+}
+
+.myPage .myPageMenu-resume .top .member{
+  width: 1149px;
+  height: 250px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.myPage .myPageMenu-resume .top .member input{
+  width: 200px;
+  height: 25px;
+  font-size: 16px;
+  /* background-color: salmon; */
+  text-align: left;
+  border: none;
+}
+
+.myPage .myPageMenu-resume .top .member .email{
+  width: 100px;
+  height: 25px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.myPage .myPageMenu-resume .top .member span{
+  margin-right: 20px;
+}
+
+.myPage .myPageMenu-resume .top .member select{
+  width: 100px;
+  height: 25px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.myPage .myPageMenu-resume .top .member option{
+  font-size: 16px;
+}
+
+.myPage .myPageMenu-resume .top .member .address{
+  width: 500px;
+  height: 25px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.myPage .myPageMenu-resume .top .member ul{
+  list-style-type: none;
+  float: left;
+}
+
+.myPage .myPageMenu-resume .top .member li{
+  width: 400px;
+  margin: 5px 20px;
+  font-size: 20px;
+  display: inline-block;
+  
+}
+
+.myPage .myPageMenu-resume .top .member li div{
+  width: 140px;
+  font-weight: bold;
+  float: left;
+}
+
+/* main body div*/
+
+.myPageMenu-resume .body{
+    width: 1346px;
+    border: 1px solid black;
+    margin: 0px auto;
+    display: inline-block;
+}
+
+.myPageMenu-resume .body h2{
+  margin: 100px 50px 40px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.myPageMenu-resume .body select{
+  width: 200px;
+  height: 40px;
+  margin-left: 5px;
+  margin-top: 5px;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+.myPageMenu-resume .body option{
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+
+.myPageMenu-resume .body ul{
+  list-style-type: none;
+  margin-bottom: 40px;
+  margin-left: 40px
+}
+
+.myPageMenu-resume .body li{
+  width: 100%;
+  font-size: 20px;
+  clear: both;
+}
+
+.myPageMenu-resume .body #schoolText, #certificateText , #careerText{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.body .input-size1{
+  width: 400px;
+  height: 40px;
+  margin-left: 5px;
+  box-sizing: border-box;
+}
+
+.body .input-size2{
+  width: 200px;
+  height: 40px;
+  margin: 5px 5px;
+  box-sizing: border-box;
+}
+
+.body .input-size3{
+  width: 418px;
+  height: 40px;
+  margin: 5px 5px;
+  box-sizing: border-box;
+}
+
+.body .input-size4{
+  width: 200px;
+  height: 40px;
+  margin: 5px 5px;
+  box-sizing: border-box;
+}
+
+.body .size1{
+  width: 202px;
+  height: 40px;
+  margin-left: 10px;
+  box-sizing: border-box;
+  font-weight:bold;
+  float: left;
+}
+
+.body .size2{
+  width: 400px;
+  height: 40px;
+  margin-left: 10px;
+  display:inline-block;
+  box-sizing: border-box;
+  font-weight:bold;
+  float: left;
+}
+
+.body .size3{
+  width: 300px;
+  height: 40px;
+  margin-left: 10px;
+  display:inline-block;
+  box-sizing: border-box;
+  font-weight:bold;
+  float: left;
+}
+
+.body .school , .position{
+  width: 202px;
+  height: 40px;
+  margin-left: 10px;
+  box-sizing: border-box;
+  text-align:left;
+  float: left;
+}
+
+.body .schoolDetail , .company{
+  width: 400px;
+  height: 40px;
+  margin-left: 10px;
+  display:inline-block;
+  box-sizing: border-box;
+  text-align:left;
+  float: left;
+}
+
+.body .admission , .startDate{
+  width: 202px;
+  height: 40px;
+  margin-left: 10px;
+  box-sizing: border-box;
+  text-align:center;
+  float: left;
+}
+
+.body .graduated , .endDate{
+  width: 202px;
+  height: 40px;
+  margin-left: 10px;
+  box-sizing: border-box;
+  text-align:center;
+  float: left;
+}
+
+.body li input{
+  font-size: 20px;
+}
+
+.body input[type=button]{
+  display: block;
+  margin: 40px auto;
+  width: 100px;
+  height: 60px;
+}
+
+.body input[type=submit]{
+  display: block;
+  margin: 40px auto;
+  width: 100px;
+  height: 60px;
+}
+
+.body button{
+	width: 150px;
+	height: 40px;
+	margin-left: 10px;
+}
+
+.body .delete{
+	width: 20px;
+	height: 20px;
+	margin-right: 60px;
+	border: 0px;
+}
+
+.body .delete-c{
+	width: 20px;
+	height: 20px;
+	margin-right: 100px;
+	border: 0px;
+}
+
+.body .delete img{
+	width: 20px;
+	height: 20px;
+	background-color: white;
+}
+
+.body .delete-c img{
+	width: 20px;
+	height: 20px;
+	background-color: white;
+}
+
+.body #school-box , #certificate-box , #career-box{
+	display: none;
+}
+
+.body .certificate{
+  width: 420px;
+  height: 40px;
+  margin-left: 10px;
+  box-sizing: border-box;
+  text-align:left;
+  float: left;
+}
+
+.body .issuer{
+  width: 420px;
+  height: 40px;
+  margin-left: 10px;
+  display:inline-block;
+  box-sizing: border-box;
+  text-align:left;
+  float: left;
+}
+
+.body .getDate{
+  width: 202px;
+  height: 40px;
+  margin-left: 25px;
+  box-sizing: border-box;
+  text-align:left;
+  float: left;
+}
+
+.body input[type=text]:hover,input[type=date]:hover,select:hover {
+	background-color: #f5f5f5;
+}

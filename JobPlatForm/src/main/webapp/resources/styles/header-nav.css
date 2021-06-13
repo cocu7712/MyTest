@@ -1,0 +1,108 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+img:hover{
+  cursor: pointer;
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+.header a:hover{
+	color: orange;
+}
+
+
+.header a:link, a:visited{
+  text-align: center;
+  display: inline-block; 
+  text-decoration: none;
+  color: black; 
+}
+
+.header > nav{
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  box-sizing: border-box;
+  border-bottom: 1px solid gray;
+  margin: 0px auto;
+  font-weight: bold;
+}
+
+.inverted{
+  position: fixed;
+  top: 0px;
+  left: 0xp;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  border-bottom: none;
+}
+
+.header > nav > ul{
+  display: inline-block;
+}
+
+.header > nav > .left{
+    position: absolute;
+}
+
+.header > nav > .left > li{
+  display: inline-block;
+  padding: 20px;
+  width: 300px;
+}
+
+.header > nav > .left > li > a{
+  font-size: 28px;
+  padding: 10px 5px 10px 35px;
+  background-color:white ;
+  border:none;
+}
+
+.nav-img{
+  display: none;
+}
+
+.header > nav > .right{
+  display: inline-block;
+  position: absolute;
+  padding: 25px 0px;
+  right: 0px;
+  width: 600px;
+  box-sizing: border-box;
+}
+
+.header > nav > .right > li{
+  display: inline-block;
+}
+
+.header > nav > .right > li > a{
+  font-size: 21px;
+  padding: 10px 15px;
+  color: gray;
+}
+
+.header > nav > .right > li > a:hover{
+	color: orange;
+}
+
+.header > nav > .right > li > .right-color{
+  font-size: 21px;
+  padding: 10px 15px;
+  color: black;
+}
+
+.header > nav > .right > li > .last{
+  font-size: 21px;
+  padding-right: 50px;
+  color: gray;
+}
+
+.nav-submenu{
+  display: none;
+}
